@@ -1,0 +1,103 @@
+html {
+  font-size: 62.5%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 96rem;
+    margin: 0 auto;
+    background: #efefef;
+}
+
+header h3{
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+main{
+    display: flex;
+    align-self: flex-start;
+}
+
+.tilesList{
+    display:grid;
+    grid-template-columns: 20rem 20rem 20rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tilesList li{
+    height:20rem;
+    width: 20rem;
+    color: white;
+    font-size: 10rem;
+    text-align: center;
+}
+
+
+.tileBlue{
+    background-color: #72C3DC;
+    border: .1rem inset #72C3DC;
+}
+
+.tileDarkerBlue{
+    background-color: #2B8EAD;
+    border: .1rem inset #2B8EAD;
+}
+
+.tileGrey{
+   background-color: #6F98A8;
+   border: .1rem inset #6F98A8;
+}
+
+.btn{
+    display: block;
+    width: 24rem;
+    font-size: 2rem;
+    background: #72C3DC;
+    padding: 15px 50px;
+    border: .1px solid #72C3DC;
+    border-radius: .5rem;
+    box-shadow: 0rem .5rem 0rem #2B8EAD;
+    padding: 0.8rem 2rem;
+    margin: 2rem 0 0 6rem;
+    color: white;
+}
+
+footer{
+    font-size: 1.5rem;
+    color: #333;
+    padding: 5px;
+}
+
+@media screen and (max-width: 375px){
+    .container{
+        background-color: blue;
+        width: 100%;
+    }
+
+    main{
+        flex-direction: column-reverse;
+        align-self: auto;
+    }
+    
+
+    .tilesList{
+        grid-template-columns: 10rem 10rem 10rem;
+    }
+    
+    .tilesList li{
+        height:10rem;
+        width: 10rem;
+    }
+
+    .btn{
+            margin: 0rem 0px 11px 2rem;
+                display: inline;
+    width: 12rem;
+    font-size: 1rem;
+    }
+}
