@@ -8,7 +8,7 @@ html {
     align-items: center;
     width: 96rem;
     margin: 0 auto;
-    background: #efefef;
+    
 }
 
 header h3{
@@ -18,7 +18,7 @@ header h3{
 
 main{
     display: flex;
-    align-self: flex-start;
+    background-color: #efefef;
 }
 
 .tilesList{
@@ -63,7 +63,7 @@ main{
     border-radius: .5rem;
     box-shadow: 0rem .5rem 0rem #2B8EAD;
     padding: 0.8rem 2rem;
-    margin: 2rem 0 0 6rem;
+    margin: 2rem 6rem 0 6rem;
     color: white;
 }
 
@@ -73,31 +73,56 @@ footer{
     padding: 5px;
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 500px){
     .container{
-        background-color: blue;
         width: 100%;
+    }
+
+    header{
+        width: 100%;
+        background-color: black;
+        margin: 0 0 2rem 0;
+    }
+    
+
+    header h3{
+        font-size: 2rem;
+        color: white;
+        text-align: center;
     }
 
     main{
         flex-direction: column-reverse;
         align-self: auto;
+        background: none;
+    }
+
+    .tiles{
+        width: 30rem;
     }
     
 
     .tilesList{
-        grid-template-columns: 10rem 10rem 10rem;
+        grid-template-columns: 90%;
+        grid-template-rows: repeat(9, 3rem);
+        justify-content: center;
     }
     
     .tilesList li{
-        height:10rem;
-        width: 10rem;
+        height: auto;
+        width: 100%;
+        font-size: 2rem;
+        color:black;
+    }
+
+    .buttons{
+        align-self: center;
     }
 
     .btn{
-            margin: 0rem 0px 11px 2rem;
-                display: inline;
-    width: 12rem;
-    font-size: 1rem;
+        margin: 0rem 0px 11px 2rem;
+        display: inline;
+        font-size: 1rem;
+        width: auto;
     }
 }
